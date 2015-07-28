@@ -4,7 +4,9 @@ Jquery plugin for textarea which looks like twitter's twit text area.
 
 #How to use
 Add this script into your index.html
+```
 <script src="path of contentEditableTextarea plugin"></script>
+```
 ```
 $(".editable").contentEditable({
 			"placeholder" : "Don´t be shy, give me some letters here.",
