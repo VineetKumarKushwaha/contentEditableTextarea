@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:="http://www.w3.org/1999/xhtml" xml:lang="fr">
+<head>	
+	<title>home</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="author" content="mondersky" />
+	<script src="jquery.js" type="text/javascript"></script>
+	<script src="elastic.js" type="text/javascript"></script>
+	<script src="editable.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="editable.css">
+	<script>
+	$(document).ready(function(){
+		$("#textarea1").editable({
+			max: 50,
+			cls: "editable_wrapper",
+			addclassIfMaxReached: "highlight",
+			padding: "10px 10px 20px 20px",
+			fontSize: "16px",
+			onBlur : function(element){
+				var edited_content = element.val();
+				console.log(edited_content);
+			},
+			limit:200
+		});
+
+
+		$("#textarea2").editable({
+			max: 50,
+			cls: "editable_wrapper",
+			addclassIfMaxReached: "highlight",
+			fontSize: "14px",
+			onBlur : function(element){
+				var edited_content = element.val();
+				console.log(edited_content);
+			},
+			limit:200
+		});
+	})
+	</script>
+	
+</head> 
+<body>
+	<textarea id="textarea1"></textarea>
+	
+
+
+
+	<textarea id="textarea2"></textarea>
+
+	
+
+
+</body>
+<script>
+
+</script>
+</html>
